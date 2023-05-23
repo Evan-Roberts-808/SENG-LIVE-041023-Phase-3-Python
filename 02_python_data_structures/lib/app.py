@@ -4,53 +4,62 @@
 # Creating Lists
 #1. ✅ Create a list of 10 pet names
 pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
-
+pet_types = ['dog', 'cat', 'fish', 'bird', 'lizard', 'snake']
 # Reading Information From Lists
 #2. ✅ Return the first pet name 
-
+print(pet_names[0])
 
 #3. ✅ Return all pet names beginning from the 3rd index
-
+print(pet_names[2:])
 
 #4. ✅ Return all pet names before the 3rd index
-
+print(pet_names[:2])
 
 #5. ✅  Return all pet names beginning from the 3rd index and up to the 7th
-
+print(pet_names[2:7])
 
 #6. ✅ Find the index of a given element
-
+print(pet_names.index('Rose'))
 
 #7. ✅ Reverse the original list
-
+pet_names.reverse()
+print(pet_names)
 
 #8. ✅ Return the frequency of a given element 
-
+print(pet_names.count('Lea'))
 
 # Updating Lists
 #9. ✅ Change the first element to all uppercase 
-
+uppercased_name = pet_names[0].upper()
+print(uppercased_name)
 
 #10. ✅ Append a new name to the list
-
+pet_names.append("phillydog")
+print(pet_names)
 
 #11. ✅ Add a new name at a specific index
-
+pet_names.insert(2, "Hasan")
+print(pet_names)
 
 #12. ✅ Add two lists together 
-
+pet_names.extend(pet_types)
+print(pet_names)
 
 #13. ✅ Remove the final element from the list
-
+pet_names.pop()
+print(pet_names)
 
 #14. ✅ Remove element by specific index
-
+pet_names.pop(4)
+print(pet_names)
 
 #15. ✅ Remove a specific element 
-
+pet_names.remove("Meow Meow Beans")
+print(pet_names)
 
 #16. ✅ Remove all pet names from the list
-
+pet_names_filtered = [name for name in pet_names if name.lower() in pet_types]
+print(pet_names_filtered)
 
 #Tuple 
 # 📚 Review With Students:
